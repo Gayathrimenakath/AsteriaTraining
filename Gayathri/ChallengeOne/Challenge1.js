@@ -32,9 +32,9 @@ function GST(taxper){
 		bill.gross = amt + bill.gross;
 		bill.total = bill.gross + bill.caltax;
 
-		roundToOneDecimal(bill.total);
-		roundToOneDecimal(bill.gross);
-		roundToOneDecimal(bill.caltax);
+		bill.total = roundToOneDecimal(bill.total);
+		bill.gross = roundToOneDecimal(bill.gross);
+		bill.caltax = roundToOneDecimal(bill.caltax);
 
 		return bill;
 	}
