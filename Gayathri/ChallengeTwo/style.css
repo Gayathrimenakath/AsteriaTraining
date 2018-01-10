@@ -1,0 +1,80 @@
+.Table{
+    display: table;
+    width: 100%;
+}
+
+.Title{
+    display: table-caption;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1pt;
+}
+
+.Heading{
+    display: table-row;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Row:nth-child(odd) {
+    display: table-row;
+    background: #ddd;
+}
+
+.Row:nth-child(even) {
+    display: table-row;
+    background-color: : #ccc;
+}
+
+.Cell:nth-child(1) {
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    font-size: 15px;
+    padding: 1pt;
+    width: 60%;
+}
+
+.Cell:nth-child(2),
+.Cell:nth-child(3),
+.Cell:nth-child(4),
+.Cell:nth-child(5) {
+    display: table-cell;
+    border: solid;
+    border-width: thin;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1pt;
+    width: 10%;
+}
+
+.table-row{
+    display: table-row;
+}
+
+.final{
+    display: table;  
+    width: 100%;
+}
+
+.Row1:{
+    display: table-row;
+}
+
+.Cell1:nth-child(1){
+    display: table-cell;
+    text-align: right;
+    float: left;
+    margin: 0 1.5%;
+    width: 63%; 
+}
+
+.Cell1:nth-child(2){
+    display: table-cell;
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+ 
