@@ -5,62 +5,60 @@
     white-space: nowrap;
     height: 500px; 
     position: relative;
+    border: 1px solid #999;
 }
 
 .Title{
     display: table-caption;
     text-align: left;
     font-weight: bold;
-    font-size: 15px;
+    font-size: medium;
 }
 
 .Heading{
     display: table-row;
     font-weight: bold;
     text-align: left;
+    border: 1px solid #999;
 }
 
 .Row:nth-child(odd) {
     display: table-row;
     background: #ddd;
-    height: 20px;
 }
 
 .Row:nth-child(even) {
     display: table-row;
+}
+
+.Cell{
+    display: table-cell;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-width: thin;
+    font-size: 15px;
+    text-align: right;
     height: 20px;
+    padding: 5px;
 }
 
 .Cell:nth-child(1) {
-    display: table-cell;
-    border: solid;
-    border-width: thin;
-    font-size: 15px;
-    width: 60%;
-    height: 20px;
+    text-align: left;
+    width: 55%;
 }
 
 .Cell:nth-child(2),
-.Cell:nth-child(3),
+.Cell:nth-child(3){
+    width:10%;
+}
+
 .Cell:nth-child(4){
-    display: table-cell;
-    border: solid;
-    border-width: thin;
-    font-size: 15px;
-    text-align: right;
-    width: 10%;
-    height: 20px;
+    width: 12.5%;
 }
 
 .Cell:nth-child(5) {
-    display: table-cell;
-    border: solid;
-    border-width: thin;
+    width: 12.5%;
     font-weight: bold;
-    font-size: 15px;
-    text-align: right;
-    width: 10%;
-    height: 20px;
 }
 
 .table-body{
@@ -68,7 +66,7 @@
 }
 
 p{
-    height: 5px; 
+    height: 1px; 
 }
 
 .Table1{
@@ -86,18 +84,26 @@ p{
 
 .Cell1:nth-child(1){
     display: table-cell;
+    box-sizing: border-box;
     font-size: 15px;
     float: left;
     text-align: right;
     width: 80%;
-    height: 20px;
+    height: 25px;
 }
 
 .Cell1:nth-child(2){
     display: table-cell;
+    box-sizing: border-box;
     font-size: 15px;
     float: right;
     text-align: right;
     width: 20%;
-    height: 20px;
+    height: 25px;
+    padding: 5px;
+}
+
+.total{
+    font-weight: bold;
+    font-size: x-large;
 }
