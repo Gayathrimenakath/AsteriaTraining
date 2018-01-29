@@ -1,45 +1,40 @@
-function GST(taxPercent){
+function GST(taxPercent) {
 
-	var billAmount = {
-		total : 0,
-		gross : 0,
-		tax   : 0,
-	};
+    var billAmount = {
+        total: 0,
+        gross: 0,
+        tax: 0,
+    };
 
-	if(taxPercent===undefined){
+    if (taxPercent === undefined) {
 
-		throw new Error("taxpercent is mandatory");
-	}
- 
-function Biller(amount,CustomTaxPercent){
-	
-	var typeConversion = parseInt(CustomTaxPercent);
-	var typeConversiona = parseInt(taxPercent);
+        throw new Error("taxpercent is mandatory");
+    }
 
-if(CustomTaxPercent==undefined){
-	billAmount.tax = billAmount.tax + ((typeConversiona*amount)/100);
+    function Biller(amount, CustomTaxPercent) {
 
-}
+        var typeConversion = parseFloat(CustomTaxPercent);
+        var typeConversiona = parseFloat(taxPercent);
 
-else{
+        if (CustomTaxPercent == undefined) {
+            billAmount.tax = billAmount.tax + ((typeConversiona * amount) / 100);
 
-	billAmount.tax = billAmount.tax + ((typeConversion*amount)/100);
-}
+        } else {
 
-	billAmount.gross = billAmount.gross + amount ;
-	billAmount.total = billAmount.gross + billAmount.tax;
+            billAmount.tax = billAmount.tax + ((typeConversion * amount) / 100);
+        }
 
-	return billAmount;
+        billAmount.gross = billAmount.gross + amount;
+        billAmount.total = billAmount.gross + billAmount.tax;
 
-	}
+        return billAmount;
 
-	return Biller;
+    }
+
+    return Biller;
 
 }
 
 var Biller = GST('9.5%');
 Biller(100);
-Biller(100,'5%');
-
-
-
+Biller(100, '5%');
